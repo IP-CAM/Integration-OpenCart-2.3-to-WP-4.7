@@ -1,12 +1,9 @@
-## Интеграция OpenCart 2.3 и WP 4.7
+## OpenCart 2.3 и WP 4.7
+The module uses WP REST API v2 for records and display them in the newswire OpenCart 2.3.x.  When used in conjunction with a plug WP Post To OpenCart possible to obtain directly from the WP positions and store them locally for further processing / display (see https://github.com/wlady/wp-post-to-opencart).
 
-Модуль использует **WP REST API v2** для получения записей и отображения их в ленте новостей **OpenCart 2.3.x**.
-При использовании совместно с **WP** плагином **Post To OpenCart** возможно получать посты непосредственно из **WP**
-и сохранять их локально для дальнейшей обработки/показа (смотри https://github.com/wlady/wp-post-to-opencart).
+ After installation enter the correct address in the WP system / config / wp_post.php file.
 
-После установки указать правильный адрес **WP** в файле _system/config/wp_post.php_.
-
-Я использовал шаблоны **Twig** для генерации ленты новостей. Пример шаблона для модуля **Все новости**:
+ I used Twig templates to generate news feeds.  Example of a module All news:
 ```
 <div class="row">
     <h3>Новости из WP</h3>
